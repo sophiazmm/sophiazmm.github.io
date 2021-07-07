@@ -1,9 +1,10 @@
 ---
-title: 解决R语言载入包（library(org.Rn.eg.db)）报错
+title: 解决R语言载入包(library(org.Rn.eg.db))报错
 date: 2021-04-18 23:00:00
 categories: DataScience
 tags:
   - R
+  - org.Rn.eg.db
 ---
 
 解决R语言载入包（library(org.Rn.eg.db)）报错：Loading required package: BiocGenerics
