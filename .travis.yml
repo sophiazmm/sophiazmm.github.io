@@ -23,6 +23,8 @@ after_script:
   - git init
   - git config user.name "sophiazmm"
   - git config user.email "zhangmm@cau.edu.cn"
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GH_TOKEN}:@github.com" > .git/credentials
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${myblog}@github.com/sophiazmm/sophiazmm.github.io.git" master:master
