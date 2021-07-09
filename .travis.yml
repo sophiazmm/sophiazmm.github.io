@@ -35,3 +35,4 @@ branches:
 env:
  global:
    - GH_REF:github.com/sophiazmm/sophiazmm.github.io.git
+   secure: {"lots-of-seemingly-random-characters"}
