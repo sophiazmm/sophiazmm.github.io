@@ -3,7 +3,8 @@ title: from fasta to fastq
 date: 2021-08-08 23:00:00
 categories: DataScience
 tags:
-  - python 
+  - python
+  - perl
 ---
 
 1. 基于perl
