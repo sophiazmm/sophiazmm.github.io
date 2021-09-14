@@ -1,5 +1,5 @@
 ---
-title: from fasta to fastq
+title: from fasta to fastq 格式转换
 date: 2021-08-08 23:00:00
 categories: DataScience
 tags:
@@ -13,6 +13,7 @@ tags:
 
 2. 基于python包bioconvert
 
+*pip3 install bioconvert*
 *bioconvert fasta2fastq 1tar_seq.fasta 1tar_seq.bioconvert.fq*
 
 3. 基于python包pyfastaq
