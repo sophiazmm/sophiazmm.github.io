@@ -1,5 +1,5 @@
 ---
-title: BLAST序列比对
+title: 序列比对BLAST
 date: 2021-08-28 23:00:00
 categories: DataScience
 tags:
