@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="1. pwd:  显示用户所处的当前目录 2. cd: 改变当前所处目录   cd ./ (指当前目录)    cd ../ (../指上一级目录，相对路径)   cd /TRAIN/RESEQ/20210223(绝对路径)   绝对路径：由根目录(/)开始写起的文件名或目录名称，如/WORK/TRAIN/RESEQ   相对路径：相对路径是以当前所在路径的相对位置来表示 3. mkdir: 创建">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux常用命令">
+<meta property="og:url" content="https://zhangwuji.work/post/d0edc1ed.html">
+<meta property="og:site_name" content="张无忌的博客">
+<meta property="og:description" content="1. pwd:  显示用户所处的当前目录 2. cd: 改变当前所处目录   cd ./ (指当前目录)    cd ../ (../指上一级目录，相对路径)   cd /TRAIN/RESEQ/20210223(绝对路径)   绝对路径：由根目录(/)开始写起的文件名或目录名称，如/WORK/TRAIN/RESEQ   相对路径：相对路径是以当前所在路径的相对位置来表示 3. mkdir: 创建">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2022-12-03T13:59:51.104Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Linux常用命令">
+<meta name="twitter:description" content="1. pwd:  显示用户所处的当前目录 2. cd: 改变当前所处目录   cd ./ (指当前目录)    cd ../ (../指上一级目录，相对路径)   cd /TRAIN/RESEQ/20210223(绝对路径)   绝对路径：由根目录(/)开始写起的文件名或目录名称，如/WORK/TRAIN/RESEQ   相对路径：相对路径是以当前所在路径的相对位置来表示 3. mkdir: 创建">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://zhangwuji.work/post/d0edc1ed">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Linux常用命令 | 张无忌的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张无忌的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-publication">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/publication/" rel="section"><i class="menu-item-icon fa fa-fw fa-envira"></i> <br>Publication</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/d0edc1ed.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Linux常用命令
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-03-02 23:00:00" itemprop="dateCreated datePublished" datetime="2021-03-02T23:00:00+00:00">2021-03-02</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/d0edc1ed.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/d0edc1ed.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/d0edc1ed.html" class="leancloud_visitors" data-flag-title="Linux常用命令">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">2.2k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">3 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><strong>1. pwd:</strong> </p>
+<p><em>显示用户所处的当前目录</em></p>
+<p><strong>2. cd:</strong></p>
+<p><em>改变当前所处目录</em></p>
+<p>  cd ./ (指当前目录) </p>
+<p>  cd ../ (../指上一级目录，相对路径)</p>
+<p>  cd /TRAIN/RESEQ/20210223(绝对路径)</p>
+<p>  绝对路径：由根目录(/)开始写起的文件名或目录名称，如/WORK/TRAIN/RESEQ</p>
+<p>  相对路径：相对路径是以当前所在路径的相对位置来表示</p>
+<p><strong>3. mkdir:</strong></p>
+<p><em>创建目录    主要参数：「-P」「目录名称」</em></p>
+<p>  – p: 若所要建立目录的上层目录目前尚未建立，则会强制建立</p>
+<p>  mkdir myfile</p>
+<p>  mkdir ../myfile</p>
+<p>  mkdir -p /home/myfile/a</p>
+<p>  mkdir -p ../a/b</p>
+<p><strong>4.rmdir:</strong></p>
+<p><em>删除目录。主要参数：「-p」[目录…]</em></p>
+<p>  –p: 删除指定目录后， 若该目录的上层目录已变成空目录，则一并删除</p>
+<ul>
+<li><p>v：删除每一个目录都显示信息</p>
+<p>rmdir ./myfile    删除的必须是空目录，如果不是空目录用rm删除</p>
+<p>rmdir -p  ./a/b</p>
+<p>rmdir  -pv /home/myfile/a</p>
+<p>ls:    列出子目录或文件信息</p>
+</li>
+<li><p>a:    显示所有文件，包括隐藏文件（以“.开头”）</p>
+</li>
+<li><p>l:  使用详细格式列表，每列仅显示一个文件或目录名</p>
+</li>
+<li><p>h:    自动用“K”，“M”，“G”来显示文件和目录的大小</p>
+</li>
+<li><p>d:  显示指定的目录名称而非其内容，如不指定目录，则显示当前目录名</p>
+</li>
+<li><p>L: 如遇到性质为符号连接的文件或目录，直接列出该连接所指向的原始文件或目录</p>
+</li>
+<li><p>R: 将指定目录下的所有文件及子目录一并处理</p>
+</li>
+<li><p>X:  以文件和目录的最后一个扩展名排序</p>
+</li>
+<li><p>S:   用文件和目录的大小排序</p>
+</li>
+</ul>
+<p><strong>5. cp:</strong></p>
+<p><em>拷贝文件或目录</em></p>
+<p>  -f     强制复制文件或目录，不论目标文件或目录是否已存在</p>
+<p>  -i: 覆盖即有文件之前先询问用户</p>
+<p>  -p:保留源文件或目录的属性</p>
+<p>  -P:保留源文件或目录的路径</p>
+<p>  -r:将指定目录下的文件与子目录一并处理</p>
+<p>  -l: 对源文件建立硬连接，而非复制文件</p>
+<p>  -s: 对源文件建立符号连接，而非复制文件</p>
+<p>  -v: 显示指令执行过程</p>
+<p><strong>6. rm:</strong></p>
+<p><em>删除文件或目录</em></p>
+<p>  -f 强制删除文件或目录</p>
+<p>  -i 删除既有文件或目录之前先询问用户</p>
+<p>  -r  将指定目录下的所有文件及子目录一并处理</p>
+<p>  -v  显示指令执行过程</p>
+<p>  rm test.txt</p>
+<p>  rm -r test</p>
+<p>  rm -firv test</p>
+<p>  rm -frv <em>es</em></p>
+<p><strong>7. mv:</strong></p>
+<p><em>移动目录或文件</em></p>
+<p>-f  若目录文件或目录与现有的文件或目录重复，则直接覆盖现有的文件或目录</p>
+<p>-i 覆盖前先询问用户</p>
+<p>-u  在移动或更改文件名时，若目标文件已存在，且其文件日期比源文件新，则不覆盖目标文件</p>
+<p>-v  执行时显示详细的信息</p>
+<p>  mv test.txt ../</p>
+<p>  mv test.txt myfile.txt</p>
+<p>  mv -fiuv ./test ../</p>
+<p>  mv test files</p>
+<p><strong>8. Ln:</strong></p>
+<p><em>建立链接</em></p>
+<p>主要参数：「-bdfins」「源文件或目录」「目录文件或目录」</p>
+<p>-b 删除，覆盖以前建立的链接</p>
+<p>-d 允许超级用户制作目录的硬链接</p>
+<p>-f 强制执行</p>
+<p>-i 交互模式，文件存在则提示用户是否覆盖</p>
+<p>-n 把符号链接视为一般目录</p>
+<p>-s 软链接（符号链接）</p>
+<p><strong>9. chmod:</strong></p>
+<p><em>改变访问文件或目录权限</em></p>
+<p>文件属性：</p>
+<p>[d]</p>
+<p>[rwx]</p>
+<p>[r-x]</p>
+<p>[r-x]</p>
+<p>r代表可读、w代表可写、w代表可执行</p>
+<ol>
+<li><p>表示类型，有如下值：</p>
+<p>[d]则是目录。[-]则是文件。 [l]则表示为链接(ln)</p>
+</li>
+<li><p>u：表示属主的权限</p>
+</li>
+<li><p>g： 表示同组其他用户的权限</p>
+</li>
+<li><p>o:    表示非同组用户的权限</p>
+</li>
+<li><p>a:    所有用户(u+g+o)</p>
+</li>
+</ol>
+<p><strong>10. find:</strong></p>
+<p><em>递归查找文件和子目录</em></p>
+<p>用法：find 路径… 表达式</p>
+<p>-name: 表达式（可以是通配符“*”与“？”）</p>
+<p>？可表示任意单个字符</p>
+<p>* 可表示任意多个字符</p>
+<p>-user：属主-group：属组</p>
+<p>-atime：n（n天之前访问的文件）-n（前n天之后访问的文件）</p>
+<p>+n（前n天之前访问的文件）</p>
+<p>-print：输出查找结果</p>
+<p><strong>11. grep:</strong></p>
+<p><em>查找含有某字符串的行</em></p>
+<p>用法：grep [参数] 字符串/正则表达式filename</p>
+<p>-n：显示匹配的行号</p>
+<p>-num：显示匹配行前后各num的行</p>
+<p>-i：不区分大小写</p>
+<p>正则表达式：(又称为模式)</p>
+<p>. 匹配任意个字符^ 匹配行开头% 匹配行结尾</p>
+<p>[] 匹配[]中任意一个字符，如[a-z]。</p>
+<p>如：grep “^Novogene” filename</p>
+<p><strong>12. diff:</strong></p>
+<p><em>比较两个文件的不同</em></p>
+<p>用法：diff file1 file2</p>
+<p>-a：只逐行比较文本文件；</p>
+<p>-b：忽略空格；</p>
+<p>-B：忽略空行；</p>
+<p>-c：显示全部内容，并标出不同之处；</p>
+<p><strong>13. comm:</strong></p>
+<p><em>对已排序的文件进行比较</em></p>
+<p>用法：comm[-123]file1 file2</p>
+<p>-1  不显示只在第1个文件里出现过的列。</p>
+<p>-2  不显示只在第2个文件里出现过的列。</p>
+<p>-3  不显示只在第1和第2个文件里出现过的列。</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        
+          
+        
+        <div class="post-tags">
+          
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/post/291e36d8.html" rel="next" title="转录组数据分析之STAR比对分析：">
+                <i class="fa fa-chevron-left"></i> 转录组数据分析之STAR比对分析：
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/post/b3ee7f3f.html" rel="prev" title="Data wrangling with dplyr and tidyr 1">
+                Data wrangling with dplyr and tidyr 1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/author.png" alt="sophiazmm">
+            
+              <p class="site-author-name" itemprop="name">sophiazmm</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">58</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/sophiazmm" title="GitHub &rarr; https://github.com/sophiazmm" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-sun-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sophiazmm</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Symbols count total: </span>
+    
+    <span title="Symbols count total">39k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    
+    <span title="Reading time total">49 mins.</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
+
+
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'GDoc9Q2tmkm59G8emNBFtptx-gzGzoHsz',
+    appKey: 'rFmK7HNsBINf8j7amV2KNGGP',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>

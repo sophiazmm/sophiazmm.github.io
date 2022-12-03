@@ -1,0 +1,3279 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="en">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.1.2">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.1.2">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.1.2" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '7.1.2',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    back2top: true,
+    back2top_sidebar: false,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="张无忌的博客">
+<meta property="og:url" content="https://zhangwuji.work/index.html">
+<meta property="og:site_name" content="张无忌的博客">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="张无忌的博客">
+
+
+
+
+
+  
+  
+  <link rel="canonical" href="https://zhangwuji.work/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>张无忌的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+  page-home">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">张无忌的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home menu-item-active">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>Categories</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-publication">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/publication/" rel="section"><i class="menu-item-icon fa fa-fw fa-envira"></i> <br>Publication</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/e480e21c.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/e480e21c.html" class="post-title-link" itemprop="url">序列比对Bowtie2</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-09-14 23:00:00" itemprop="dateCreated datePublished" datetime="2021-09-14T23:00:00+00:00">2021-09-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/e480e21c.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/e480e21c.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/e480e21c.html" class="leancloud_visitors" data-flag-title="序列比对Bowtie2">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">888</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>一、Bowtie2下载安装</strong></p>
+<ol>
+<li><p>Bowtie2软件下载</p>
+<p>下载链接：下载最新版本<br><a href="https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.4.4/" target="_blank" rel="noopener">https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.4.4/</a><br>根据服务器系统选择软件版本：</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1gugj54wyv2j61m00icn0g02.jpg" alt></p>
+</li>
+<li><p>Bowtie2软件解压</p>
+<p>文件位置pwd: /data/software</p>
+<p>unzip bowtie2-2.4.4-linux-x86_64.zip</p>
+</li>
+<li><p>配置环境变量</p>
+<p>vim ~/.bashrc</p>
+<p>文件末尾添加：export PATH=/data/software/bowtie2-2.4.4-linux-x86_64:$PATH</p>
+<p>source ~/.bashrc</p>
+</li>
+<li><p>检查是否安装成功</p>
+<p>bowtie2 -h</p>
+<p>![image-20210914223711148](/Users/sophia/Library/Application Support/typora-user-images/image-20210914223711148.png)</p>
+</li>
+</ol>
+<p><strong>二、Bowtie2短序列比对</strong></p>
+<ol>
+<li><p>创建Bowtie2的index数据库</p>
+<p>bowtie2-build GCF_000223135.1_CriGri_1.0_genomic.fna GCF</p>
+</li>
+<li><p>使用Bowtie2进行序列比对</p>
+<p>比对命令及参数：/data/software/bowtie2-2.4.4-linux-x86_64/bowtie2 -x /data/bio-db/GCF -U tar_seq.fq -S tar_bowtie.sam –end-to-end - N 1</p>
+<p>注：–end-to-end: 整个reads与参考基因组进行比对</p>
+<pre><code>-N &lt;int&gt; 进行种子比对时允许的mismatch数. 可以设为0或者1. Default: 0</code></pre></li>
+</ol>
+<p>​    ![image-20210914224737272](/Users/sophia/Library/Application Support/typora-user-images/image-20210914224737272.png)</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/e6d74211.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/e6d74211.html" class="post-title-link" itemprop="url">序列比对BLAST</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-08-28 23:00:00" itemprop="dateCreated datePublished" datetime="2021-08-28T23:00:00+00:00">2021-08-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/e6d74211.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/e6d74211.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/e6d74211.html" class="leancloud_visitors" data-flag-title="序列比对BLAST">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.4k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>一、Linux搭建Blast</strong></p>
+<ol>
+<li>Blast下载<br>下载链接：<a href="https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/" target="_blank" rel="noopener">https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/</a><br>根据服务器系统选择下载版本：<br><img src="https://tva1.sinaimg.cn/large/008i3skNly1gughxty7cnj60ze0o6n5g02.jpg" alt></li>
+<li>Blast解压安装<br>tar -xvf ncbi-blast-2.12.0+-x64-linux.tar<br>mv ncbi-blast-2.12.0+-x64-linux.tar blast</li>
+<li>配置环境变量<br>vim ~/.bashrc<br>文件末尾添加：export PATH=/data/software/blast/bin:$PATH<br>source ~/.bashrc</li>
+<li>检验是否安装成功<br>blastn -h<br><img src="https://tva1.sinaimg.cn/large/008i3skNly1gugi45uklpj30y80l6gqd.jpg" alt></li>
+</ol>
+<p><strong>二、Blastn序列比对</strong></p>
+<ol>
+<li><p>搭建参考基因组数据库<br>文件位置pwd: /data<br>下载参考基因组文件：          <a href="https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/223/135/GCF_000223135.1_CriGri_1.0/GCF_000223135.1_CriGri_1.0_genomic.fna.gz" target="_blank" rel="noopener">https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/223/135/GCF_000223135.1_CriGri_1.0/GCF_000223135.1_CriGri_1.0_genomic.fna.gz</a><br>mkdir db<br>mv GCF_000223135.1_CriGri_1.0_genomic.fna.gz db/<br>cd db/<br>gunzip GCF_000223135.1_CriGri_1.0_genomic.fna.gz<br>makeblastdb -in GCF_000223135.1_CriGri_1.0_genomic.fna -dbtype nucl</p>
+</li>
+<li><p>短序列与参考基因组比对<br>文件位置pwd: /data/software/blast<br>比对命令：blastn -query seq.fasta -db ../../db/GCF_000223135.1_CriGri_1.0_genomic.fna -out seq.out -outfmt 6 -num_threads 23 -task blastn-short #blastn-short为针对小于30bp序列比对的设定参数<br>结果文件：<br><img src="https://tva1.sinaimg.cn/large/008i3skNly1gugij45o1vj615o0j243q02.jpg" alt><br>结果文件含12列，信息如下：<br>qseqid      query or source (e.g., gene) sequence idsseqid      subject  or target (e.g.,     reference genome) sequence id<br>pident      percentage of identical matches<br>length      alignment length (sequence overlap)<br>mismatch    number of mismatches<br>gapopen     number of gap openings<br>qstart      start of alignment in query<br>qend        end of alignment in query<br>sstart      start of alignment in subject<br>send        end of alignment in subject<br>evalue      expect value<br>bitscore    bit score</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/816cd736.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/816cd736.html" class="post-title-link" itemprop="url">from fasta to fastq 格式转换</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-08-08 23:00:00" itemprop="dateCreated datePublished" datetime="2021-08-08T23:00:00+00:00">2021-08-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/816cd736.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/816cd736.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/816cd736.html" class="leancloud_visitors" data-flag-title="from fasta to fastq 格式转换">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">419</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>基于perl</li>
+</ol>
+<p><em>cat 1tar_seq.fasta | paste - - | perl -ne ‘chomp; s/^&gt;/@/; @v = split /\t/; printf(“%s\n%s\n+\n%s\n”, $v[0], $v[1], “B”x length($v[1]))’ &gt; 1tar_seq.fq</em></p>
+<ol start="2">
+<li>基于python包bioconvert</li>
+</ol>
+<p><em>pip3 install bioconvert</em><br><em>bioconvert fasta2fastq 1tar_seq.fasta 1tar_seq.bioconvert.fq</em></p>
+<ol start="3">
+<li>基于python包pyfastaq</li>
+</ol>
+<p><em>pip3 install pyfastaq</em><br><em>fastaq to_fake_qual 1tar_seq.fasta - | fastaq fasta_to_fastq 1tar_seq.fasta - 1tar_seq.pyfastaq.out.fastq</em></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/fa838be0.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/fa838be0.html" class="post-title-link" itemprop="url">解决Rstudio报错“Error in plot.new() - figure margins too large”</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-07-28 23:00:00" itemprop="dateCreated datePublished" datetime="2021-07-28T23:00:00+00:00">2021-07-28</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/fa838be0.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/fa838be0.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/fa838be0.html" class="leancloud_visitors" data-flag-title="解决Rstudio报错“Error in plot.new() - figure margins too large”">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">235</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>![image-20210820160757122](/Users/sophia/Library/Application Support/typora-user-images/image-20210820160757122.png)</p>
+<p>解决方法一：</p>
+<p>RSTUDIO的四分窗口中plot的窗口过小，把窗口拖大</p>
+<p>解决方法二：</p>
+<p>图的边距太小，就是边距设置的太大。一个是确实小，<code>par(&quot;mar&quot;)</code>可以查看，可以通过<code>par(mar=c(1,1,1,1))</code>修改</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/f7825268.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/f7825268.html" class="post-title-link" itemprop="url">四种方法删除数据框中某列为NA的行</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-07-07 23:00:00" itemprop="dateCreated datePublished" datetime="2021-07-07T23:00:00+00:00">2021-07-07</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/f7825268.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/f7825268.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/f7825268.html" class="leancloud_visitors" data-flag-title="四种方法删除数据框中某列为NA的行">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">315</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>fpkm_host_filter=subset(fpkm_host, !is.na(X))##删除第一列为NA的行base版本</strong></p>
+<p><strong>fpkm_host_filter3 &lt;- fpkm_host[!is.na(fpkm_host$X),]##删除第一列为NA的行另一个base版本</strong></p>
+<p><strong>library(tidyverse)<br>fpkm_host_filter2=fpkm_host%&gt;% drop_na(X)##删除第一列为NA的行tidyverse极乐版本</strong></p>
+<p><strong>fpkm_host_filter4=fpkm_host%&gt;%dplyr::filter(!is.na(X))##删除第一列为NA的行tidyverse另一个极乐版本</strong></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/68d7c238.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/68d7c238.html" class="post-title-link" itemprop="url">两种R中计算某列数值的平均值方法</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-06-18 23:00:00" itemprop="dateCreated datePublished" datetime="2021-06-18T23:00:00+00:00">2021-06-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/68d7c238.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/68d7c238.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/68d7c238.html" class="leancloud_visitors" data-flag-title="两种R中计算某列数值的平均值方法">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">149</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><strong>apply</strong></p>
+<p>apply(fpkm_host_filter,2,mean)###apply(cluster1,2,mean) 将函数“mean”应用于第二维（列）</p>
+<p><strong>colMeans</strong></p>
+<p>colMeans(fpkm_host_filter, na.rm=TRUE)###使用colMeans计算列的平均值</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/2e3a4f0f.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/2e3a4f0f.html" class="post-title-link" itemprop="url">解决Linux系统解压文件报错：unexpected end of file的问题(library(org.Rn.eg.db))报错</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-06-08 23:00:00" itemprop="dateCreated datePublished" datetime="2021-06-08T23:00:00+00:00">2021-06-08</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/2e3a4f0f.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/2e3a4f0f.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/2e3a4f0f.html" class="leancloud_visitors" data-flag-title="解决Linux系统解压文件报错：unexpected end of file的问题(library(org.Rn.eg.db))报错">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">68</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>解压文件出现错误：unexpected end of file</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNly1grm8nhtwbvj31ae04gq58.jpg" alt></p>
+<p>解决问题：首先检查是否下载完全，发现压缩包有问题，重新下载，解压成功</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/2f4c0aab.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/2f4c0aab.html" class="post-title-link" itemprop="url">qqman&ggplot两种方法制作曼哈顿图</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-05-18 23:00:00" itemprop="dateCreated datePublished" datetime="2021-05-18T23:00:00+00:00">2021-05-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/2f4c0aab.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/2f4c0aab.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/2f4c0aab.html" class="leancloud_visitors" data-flag-title="qqman&ggplot两种方法制作曼哈顿图">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.5k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>data &lt;-read.table(“ratio.xls”, header = T)<br>head(data)</p>
+<p>![image-20210607114640672](/Users/sophia/Library/Application Support/typora-user-images/image-20210607114640672.png)</p>
+<p>#(一)qqman</p>
+<p>install.packages(“qqman”)<br>library(qqman)<br>head(gwasResults)<br>data &lt;- read.table(“ratio.xls”, header = T)<br>nrow(data)<br>data$SNP &lt;- seq(1,525369)<br>head(data)</p>
+<p>![image-20210607114259114](/Users/sophia/Library/Application Support/typora-user-images/image-20210607114259114.png)manhattan(data, chr=”Chr”, bp=”Start”, snp=”SNP”, p=”Ratio”,col = c(“blue”, “orange”), cex.axis=1.0, cex=0.6)</p>
+<p>#(二)ggplot</p>
+<p>install.packages(“dplyr”)<br>install.packages(“ggplot2”)</p>
+<p>library(dplyr)<br>data$BP &lt;- data$Start/1000000<br>don &lt;- data %&gt;%</p>
+<p>group_by(Chr) %&gt;%<br>summarise(chr_len = max(BP)) %&gt;%</p>
+<p>mutate (tot = cumsum(chr_len)-chr_len) %&gt;%<br>select(-chr_len) %&gt;%</p>
+<p>left_join(data, ., by=c(“Chr” = “Chr”)) %&gt;%</p>
+<p>arrange(Chr, BP) %&gt;%<br>mutate(BPcum = BP+tot)</p>
+<p>axisdf = don %&gt;% group_by(Chr) %&gt;% summarise(center= (max(BPcum)+min(BPcum))/2)</p>
+<p>library(ggplot2)<br>ggplot(don, aes(x=BPcum, y=-log10(Ratio))) +<br>geom_point(aes(color=as.factor(Chr)), alpha=0.8, size=1.3) +<br>  scale_color_manual(values = rep(c(“blue”, “orange”),22)) +<br>  scale_x_continuous(labels = axisdf$Chr, breaks = axisdf$center) +<br>  scale_y_continuous(expand = c(0,0)) +<br>  theme_bw() +<br>  theme(<br>      legend.position=”none”,<br>      panel.border = element_blank(),<br>      panel.grid.major.x = element_blank(),<br>      panel.grid.minor.x = element_blank()<br>  )</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/f04059d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/f04059d.html" class="post-title-link" itemprop="url">OrgDB包对应物种名称</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-04-19 23:00:00" itemprop="dateCreated datePublished" datetime="2021-04-19T23:00:00+00:00">2021-04-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/f04059d.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/f04059d.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/f04059d.html" class="leancloud_visitors" data-flag-title="OrgDB包对应物种名称">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">724</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">1 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li>OrgDB包对应物种名称</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>物种</th>
+<th>OrgDB</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>按蚊（Anopheles）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Ag.eg.db.html" target="_blank" rel="noopener">org.Ag.eg.db</a></td>
+</tr>
+<tr>
+<td>拟南芥（Arabidopsis）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.At.tair.db.html" target="_blank" rel="noopener">org.At.tair.db</a></td>
+</tr>
+<tr>
+<td>牛（Brovine)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Bt.eg.db.html" target="_blank" rel="noopener">org.Bt.eg.db</a></td>
+</tr>
+<tr>
+<td>蠕虫（Worm）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Ce.eg.db.html" target="_blank" rel="noopener">org.Ce.eg.db</a></td>
+</tr>
+<tr>
+<td>犬（Canine）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Cf.eg.db.html" target="_blank" rel="noopener">org.Cf.eg.db</a></td>
+</tr>
+<tr>
+<td>苍蝇（Fly)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Dm.eg.db.html" target="_blank" rel="noopener">org.Dm.eg.db</a></td>
+</tr>
+<tr>
+<td>斑马鱼（Zebrafish）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Dr.eg.db.html" target="_blank" rel="noopener">org.Dr.eg.db</a></td>
+</tr>
+<tr>
+<td>大肠杆菌 strain K12（E coli strain K12）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.EcK12.eg.db.html" target="_blank" rel="noopener">org.EcK12.eg.db</a></td>
+</tr>
+<tr>
+<td>大肠杆菌strain Sakai(E coli strain Sakai)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.EcSakai.eg.db.html" target="_blank" rel="noopener">org.EcSakai.eg.db</a></td>
+</tr>
+<tr>
+<td>鸡（Chicken）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Gg.eg.db.html" target="_blank" rel="noopener">org.Gg.eg.db</a></td>
+</tr>
+<tr>
+<td>人（Humanm)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Hs.eg.db.html" target="_blank" rel="noopener">org.Hs.eg.db</a></td>
+</tr>
+<tr>
+<td>小鼠（Mouse）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Mm.eg.db.html" target="_blank" rel="noopener">org.Mm.eg.db</a></td>
+</tr>
+<tr>
+<td>恒河猴（Rhesus）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Mmu.eg.db.html" target="_blank" rel="noopener">org.Mmu.eg.db</a></td>
+</tr>
+<tr>
+<td>疟原虫（Malaria）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Pf.plasmo.db.html" target="_blank" rel="noopener">org.Pf.plasmo.db</a></td>
+</tr>
+<tr>
+<td>黑猩猩（Chimp）</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Pt.eg.db.html" target="_blank" rel="noopener">org.Pt.eg.db</a></td>
+</tr>
+<tr>
+<td>大鼠，褐家鼠（Rat)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Rn.eg.db.html" target="_blank" rel="noopener">org.Rn.eg.db</a></td>
+</tr>
+<tr>
+<td>酵母（Yeast)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Sc.sgd.db.html" target="_blank" rel="noopener">org.Sc.sgd.db</a></td>
+</tr>
+<tr>
+<td>猪（Pig)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Ss.eg.db.html" target="_blank" rel="noopener">org.Ss.eg.db</a></td>
+</tr>
+<tr>
+<td>爪蟾(Xenopus)</td>
+<td><a href="http://www.bioconductor.org/packages/devel/data/annotation/html/org.Xl.eg.db.html" target="_blank" rel="noopener">org.Xl.eg.db</a></td>
+</tr>
+</tbody></table>
+<p><a href="http://www.bioconductor.org/packages/release/data/annotation/" target="_blank" rel="noopener">http://www.bioconductor.org/packages/release/data/annotation/</a></p>
+<ol start="2">
+<li>KEGG Organisms</li>
+</ol>
+<p><a href="https://www.genome.jp/kegg/catalog/org_list.html" target="_blank" rel="noopener">https://www.genome.jp/kegg/catalog/org_list.html</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://zhangwuji.work/post/4c258f9a.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="sophiazmm">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/author.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张无忌的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/post/4c258f9a.html" class="post-title-link" itemprop="url">Linux安装应用MaxQuant</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2021-04-18 23:00:00" itemprop="dateCreated datePublished" datetime="2021-04-18T23:00:00+00:00">2021-04-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2022-12-03 13:59:51" itemprop="dateModified" datetime="2022-12-03T13:59:51+00:00">2022-12-03</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/DataScience/" itemprop="url" rel="index"><span itemprop="name">DataScience</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">Comments: </span>
+                <a href="/post/4c258f9a.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/post/4c258f9a.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+            <span id="/post/4c258f9a.html" class="leancloud_visitors" data-flag-title="Linux安装应用MaxQuant">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Views: </span>
+              
+                <span class="leancloud-visitors-count"></span>
+            </span>
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Symbols count in article: </span>
+                
+                <span title="Symbols count in article">1.3k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">2 mins.</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>MaxQuant官方文档：<a href="http://www.coxdocs.org/doku.php?id=maxquant:start" target="_blank" rel="noopener">http://www.coxdocs.org/doku.php?id=maxquant:start</a></p>
+<h2 id="一、MaxQuant下载"><a href="#一、MaxQuant下载" class="headerlink" title="一、MaxQuant下载"></a>一、MaxQuant下载</h2><p><a href="https://maxquant.org/download_asset/maxquant/latest" target="_blank" rel="noopener">https://maxquant.org/download_asset/maxquant/latest</a><br><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gpgsq4dwt6j30ws0u00uz.jpg" alt><br>填写的邮箱里获取下载链接，七日有效</p>
+<h2 id="二、Install-NET-Core-2-1"><a href="#二、Install-NET-Core-2-1" class="headerlink" title="二、Install .NET Core 2.1"></a>二、Install .NET Core 2.1</h2><p>wget <a href="https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb" target="_blank" rel="noopener">https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb</a> -O packages-microsoft-prod.deb<br>sudo dpkg -i packages-microsoft-prod.deb</p>
+<p>sudo apt-get update; \ 
+sudo apt-get install -y apt-transport-https &amp;&amp; <br>sudo apt-get update &amp;&amp; \ 
+sudo apt-get install -y dotnet-sdk-2.1<br><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gpgsuet0brj317w03s3ze.jpg" alt><br>这里显示版本号，可以直接运行；<br>否则，自行安装<a href="https://dotnet.microsoft.com/download/dotnet/2.1" target="_blank" rel="noopener">https://dotnet.microsoft.com/download/dotnet/2.1</a></p>
+<h2 id="三、生成-编辑XML文档"><a href="#三、生成-编辑XML文档" class="headerlink" title="三、生成/编辑XML文档"></a>三、生成/编辑XML文档</h2><ol>
+<li>自动生成，生成命令行：<br>python3 Maxquant.py  maxquant_linux_guide-master/templates/SILAC.xml rawdata_file/  -o /mnt/data/output_mqpar.xml  -t 6<br>Maxquant.py模版链接：<a href="https://github.com/atc3/maxquant_linux_guide/blob/master/gen_mqpar.py" target="_blank" rel="noopener">https://github.com/atc3/maxquant_linux_guide/blob/master/gen_mqpar.py</a></li>
+<li>编辑xml文件<br>主要涉及以下几个参数：<br><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gpgvnvldbzj31ye0ag0wm.jpg" alt><br><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gpgvouhdmij31pu0r8gu7.jpg" alt></li>
+</ol>
+<h2 id="四、运行MaxQuant"><a href="#四、运行MaxQuant" class="headerlink" title="四、运行MaxQuant"></a>四、运行MaxQuant</h2><p>dotnet MaxQuant/bin/MaxQuantCmd.exe mqpar.xml<br>mono  MaxQuant/bin/MaxQuantCmd.exe mqpar.xml</p>
+<h2 id="五、MaxQuant其他参考文档"><a href="#五、MaxQuant其他参考文档" class="headerlink" title="五、MaxQuant其他参考文档"></a>五、MaxQuant其他参考文档</h2><p><a href="http://www.coxdocs.org/doku.php?id=:maxquant:start" target="_blank" rel="noopener">http://www.coxdocs.org/doku.php?id=:maxquant:start</a><br><a href="https://atchen.me/research/2019/03/21/mq-linux.html" target="_blank" rel="noopener">https://atchen.me/research/2019/03/21/mq-linux.html</a><br><a href="https://github.com/atc3/maxquant_linux_guide" target="_blank" rel="noopener">https://github.com/atc3/maxquant_linux_guide</a><br><a href="https://pharmazie.unigreifswald.de/storages/unigreifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf" target="_blank" rel="noopener">https://pharmazie.unigreifswald.de/storages/unigreifswald/fakultaet/mnf/pharma/biotechno/dokumente/MaxQuant_Infos_and_Tutorial_07.pdf</a><br><a href="https://www.researchgate.net/post/Why-MaxQuant-on-Linux-crashes-when-Mono-is-installed-from-the-source-but-not-when-it-is-installed-form-the-repository" target="_blank" rel="noopener">https://www.researchgate.net/post/Why-MaxQuant-on-Linux-crashes-when-Mono-is-installed-from-the-source-but-not-when-it-is-installed-form-the-repository</a></p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/author.png" alt="sophiazmm">
+            
+              <p class="site-author-name" itemprop="name">sophiazmm</p>
+              <div class="site-description motion-element" itemprop="description"></div>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">58</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">71</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/sophiazmm" title="GitHub &rarr; https://github.com/sophiazmm" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+
+      
+
+    </div>
+  </aside>
+  
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-sun-o"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">sophiazmm</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Symbols count total: </span>
+    
+    <span title="Symbols count total">39k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Reading time total &asymp;</span>
+    
+    <span title="Reading time total">49 mins.</span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+  
+  <script color="0,0,255" opacity="0.5" zindex="-1" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/utils.js?v=7.1.2"></script>
+
+  <script src="/js/motion.js?v=7.1.2"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+
+  
+
+
+  <script src="/js/next-boot.js?v=7.1.2"></script>
+
+
+  
+
+  
+
+  
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'GDoc9Q2tmkm59G8emNBFtptx-gzGzoHsz',
+    appKey: 'rFmK7HNsBINf8j7amV2KNGGP',
+    placeholder: 'Just go go',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: true,
+    lang: '' || 'zh-cn'
+  });
+</script>
+
+
+
+
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/hijiki.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"tagMode":false});</script></body>
+</html>
